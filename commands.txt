@@ -1,0 +1,3 @@
+flux push artifact oci://523753954008.dkr.ecr.eu-west-1.amazonaws.com/storm-oci-demo/kubernetes:0.0.0-20230506 --path kubernetes/ --source="$(git config --get remote.origin.url)" --revision="$(git branch --show-current)@sha1:$(git rev-parse HEAD)"
+
+flux tag artifact oci://523753954008.dkr.ecr.eu-west-1.amazonaws.com/storm-oci-demo/kubernetes:0.0.0-20230506 --tag latest
