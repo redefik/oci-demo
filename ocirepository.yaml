@@ -1,0 +1,14 @@
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: OCIRepository
+metadata:
+  name: storm-oci-demo
+  namespace: storm-oci-demo
+spec:
+  interval: 5m
+  url: oci://523753954008.dkr.ecr.eu-west-1.amazonaws.com/storm-oci-demo/kubernetes
+  ref:
+    tag: latest
+  secretRef:
+    name: regcred
