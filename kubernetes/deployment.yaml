@@ -16,5 +16,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:latest
+      - image: nginx:stable-alpine3.17-slim
         name: nginx
